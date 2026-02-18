@@ -10,11 +10,9 @@ urlcolor: gray
 linkcolor: gray
 ---
 
-# Allgemeines
+# Einleitung
 
-- Apache Webserver ist schon seit langem einer der erfolgreichsten Webserver
-- seine Wurzeln gehen zurück auf den NCSA-Webserver `httpd` aus den 1990er Jahren
-- der Name ist entweder eine Referenz auf *a patchy server* oder eine Hommage an den gleichnamigen nordamerikanischen Indianerstamm
+Diese Übung enthält ein vollständiges Beispiel zur Nutzung vom Apache-Server (Abschnitt 208.1).
 
 # Voraussetzung
 
@@ -36,7 +34,7 @@ sudo dnf install httpd
 ```
 - hier heisst dann auch der Dienst entsprechend `httpd`
 - ebenso kann sich der Ort für die Konfiguration und das Web-Verzeichnis unterscheiden
-- daher kann man für einen Überblick die Inhalte vom Paket auflisten: `rpm -ql httpd`
+- für einen Überblick die Inhalte vom Paket auflisten: `rpm -ql httpd`
 
 # Status und Version prüfen
 
@@ -47,7 +45,7 @@ sudo systemctl status apache2
 sudo systemctl enable --now apache2
 ```
 
-Apache-Befehl zur Status-Abfrage:
+Apache-Befehl zur Versions-Abfrage:
 ```bash
 sudo apache2 -v
 ```

@@ -10,6 +10,10 @@ urlcolor: gray
 linkcolor: gray
 ---
 
+# Einleitung
+
+Diese Übung erweitert das Beispiel zur Nutzung vom Apache-Server um SSL (Abschnitt 208.2).
+
 # Voraussetzung
 
 - ein System (VM) mit **einer festen IP-Adresse**

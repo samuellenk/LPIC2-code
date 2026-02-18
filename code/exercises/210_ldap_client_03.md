@@ -10,6 +10,10 @@ urlcolor: gray
 linkcolor: gray
 ---
 
+# Einleitung
+
+Diese Übung enthält ein vollständiges Beispiel zur Nutzung vom LDAP-Client (Abschnitt 210.3).
+
 # Voraussetzung
 
 - ein System (VM) mit Debian 13

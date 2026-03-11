@@ -166,10 +166,10 @@ Auszug:
 127.0.0.1       localhost site1 site2
 ```
 
-vorzugsweise die Seiten am DNS-Server bekannt machen:
+die Seiten am DNS-Server bekannt machen:
 
 ```bash
-...
+[ToDo]
 ```
 
 # User für Authentifizierung erstellen
@@ -182,7 +182,7 @@ sudo htpasswd /etc/apache2/.htpasswd user2
 # löschen:
 sudo htpasswd -D /etc/apache2/.htpasswd user1
 # anzeigen:
-sudo cat /etc/apache2/.htpasswd
+cat /etc/apache2/.htpasswd
 ```
 
 # Konfiguration testen
@@ -229,7 +229,7 @@ ss -tlnp | grep :80
 
 Logs finden und ansehen:
 ```bash
-ls -Al /var/log/apache2/
+sudo ls -Al /var/log/apache2/
 sudo tail -f /var/log/apache2/site1_access.log
 sudo tail /var/log/apache2/site2_error.log
 ```
@@ -244,7 +244,7 @@ CustomLog ${APACHE_LOG_DIR}/site1_access.log lpic2
 
 Module anzeigen:
 ```bash
-apachectl -M
+sudo apachectl -M
 ls /etc/apache2/mods-enabled/
 ```
 

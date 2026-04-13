@@ -148,12 +148,6 @@ sudo postmap hash:/etc/postfix/virtual
 
 # Konfiguration übernehmen
 
-Syntax prüfen:
-```bash
-# ??
-sudo postconf -n | sudo postmap -c
-```
-
 Postfix neu laden:
 ```bash
 sudo systemctl reload postfix

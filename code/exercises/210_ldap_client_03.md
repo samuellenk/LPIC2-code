@@ -17,7 +17,7 @@ Diese Übung enthält ein vollständiges Beispiel zur Nutzung vom LDAP-Client (A
 # Voraussetzung
 
 - ein System (VM) mit Debian 13
-- am **einfachsten das System** von der **Übung [210_ldap_04](210_ldap_04.md) weiterverwenden**
+- am **einfachsten das System** von der **Übung [210_ldap_04](./210_ldap_04.md) weiterverwenden**
 
 # Zusammenfassung
 

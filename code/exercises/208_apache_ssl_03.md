@@ -120,7 +120,7 @@ Konfiguration mit HTTPS in `/etc/apache2/sites-available/ssl_example.net.conf`:
     ErrorLog /var/log/apache2/error.log
     CustomLog /var/log/apache2/example.net.log combined
     SSLEngine On
-    SSLCertificateFile/etc/apache2/ssl/myserver.pem
+    SSLCertificateFile /etc/apache2/ssl/myserver.pem
     <Directory /var/www/example.net/>
         Options Indexes FollowSymLinks
     </Directory>

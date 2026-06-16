@@ -31,6 +31,7 @@ Grundpaket installieren:
 sudo apt update
 sudo apt install postfix mailutils -y
 ```
+- hier müssen einige Fragen zur Konfiguration beantwortet werden, aber später kommen wir darauf zurück 
 
 # Default-Konfiguration
 
@@ -58,7 +59,7 @@ Wichtige Einstellungen in der `main.cf`:
 - `myhostname = mta.example.net` = Hostname für Postfix-Systems
   - meldet sich damit im SMTP-Protokoll zum Dienst und stellt sich beim Versand anderen Mailservern gegenüber vor
   - korrekte Einstellung sehr wichtig
-  - sollte mit **Reverse Lookup** des Mailservers exakt **übereinstimmen**
+  - sollte mit **Reverse Lookup** des Mailservers **exakt übereinstimmen**
 - `mydestination = $myhostname, localhost.$mydomain, localhost` = alle Domainnamen, für die der Postfix lokal zuständig ist und deren Empfänger er als normale User in `/etc/passwd` findet
 - `mynetworks = 127.0.0.0/8, [::1], 172.16.0.0/16` = damit es kein Open Relay wird, nehme nur von diesen Netzen Mails an
 
@@ -109,8 +110,8 @@ sudo postconf -e "smtpd_tls_security_level = may"
 Änderungen übernehmen:
 ```bash
 sudo systemctl restart postfix
-sudo postfix stop && \
-sudo postfix start 
+# oder alternativ:
+sudo postfix stop && sudo postfix start 
 ```
 
 Änderung überprüfen:

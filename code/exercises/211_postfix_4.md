@@ -44,7 +44,7 @@ im Ausgangszustand ist der Postfix bereits funktionsfähig, mit folgenden Eckdat
 
 - nimmt aus dem Netz an diesen Host adressierte Mails an
 - zu denen er User in der `/etc/passwd` findet
-- akzeptiert Mails in eigenen Subnetz und an Empfänger, die er über DNS ausflösen kann
+- akzeptiert Mails in eigenen Subnetz und an Empfänger, die er über DNS auflösen kann
 
 # Speicherorte und Dateien
 
@@ -161,7 +161,7 @@ lokaler Test:
 echo "Testnachricht von $(hostname)" | mail -s "LPIC‑2 Test" info@example.org
 ```
 
-Abfrage mit dem ensprechenden User:
+Abfrage mit dem entsprechenden User:
 ```bash
 sudo -iu info
 # als User info aufrufen:
@@ -217,4 +217,4 @@ sudo postsuper -d -h <MSGID>
 # Weiterführende Befehle und Themen
 
 - weitere Parameter hinzufügen: `postconf -e`, wie `relay_domains`, `transport_maps`
-- integriertes Konfig‑Diagnosetool: `postfix check`
+- integriertes Konfigurations‑Diagnosetool: `postfix check`
